@@ -1,7 +1,7 @@
 # include<stdio.h>
 
 /**
- * main is Entry point
+ * main - entry 
  *
  * return - always 0 for success
  *
