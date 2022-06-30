@@ -1,10 +1,8 @@
 # include<stdio.h>
-
 /**
- * main - entry 
+ * main - Entry 
  *
- * return - always 0 for success
- *
+ * return: always (0) success
  */
 int main(void)
 {
