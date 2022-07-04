@@ -6,20 +6,14 @@
  */
 int main(void)
 {
-char x = 0;
+char x
 int i;
 for (i = 0; i < 10; i++)
-{
+putchar((i % 10) + 10)
+for (x = 'a'; x < '7'; x++)
 putchar(x);
-x++;
-}
-x = '1';
-for (i = 0; i < 6; i++)
-{
-putchar('0' + x);
-x++;
-}
-putchar('\n');
+putchar('/n')
 return (0);
 }
+
 
