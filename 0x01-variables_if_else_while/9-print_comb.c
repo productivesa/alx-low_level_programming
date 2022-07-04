@@ -11,6 +11,7 @@ for (nu = 0; nu <= 9; nu++)
 {
 putchar((nu % 10) + '0');
 if (nu == 9)
+continue;
 putchar(',');
 putchar(' ');
 }
