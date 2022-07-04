@@ -10,8 +10,8 @@ char x = 0;
 int i;
 for (i = 0; i < 10; i++)
 {
-putchar(x)
-x++
+putchar(x);
+x++;
 }
 x = '1'
 for (i = 0; i < 6; i++)
