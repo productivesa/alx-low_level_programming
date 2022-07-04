@@ -13,7 +13,7 @@ for (i = 0; i < 10; i++)
 putchar(x);
 x++;
 }
-x = '1'
+x = '1';
 for (i = 0; i < 6; i++)
 x++;
 putchar('0' + x);
