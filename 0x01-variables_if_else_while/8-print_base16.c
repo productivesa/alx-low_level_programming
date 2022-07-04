@@ -15,7 +15,9 @@ x++;
 }
 x = '1';
 for (i = 0; i < 6; i++)
-x++;
+{
 putchar('0' + x);
+x++;
 putchar('\n');
+return (0);
 }
