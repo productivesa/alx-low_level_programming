@@ -18,7 +18,8 @@ for (i = 0; i < 6; i++)
 {
 putchar('0' + x);
 x++;
+}
 putchar('\n');
 return (0);
 }
-}
+
