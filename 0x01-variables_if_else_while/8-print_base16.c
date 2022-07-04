@@ -9,7 +9,7 @@ int main(void)
 char x;
 int i;
 for (i = 0; i < 10; i++)
-putchar((i % 10) + 10);
+putchar((i % 10) + '0');
 for (x = 'a'; x < 'f'; x++)
 putchar(x);
 putchar('\n');
