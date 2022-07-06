@@ -19,6 +19,6 @@ if ((n1 % 2) == 0)
 fib = fib + n1;
 }
 }
-printf("%d\n", fib);
+printf("%ld\n", fib);
 return (0);
 }
