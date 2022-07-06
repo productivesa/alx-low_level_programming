@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- * main - Lists all the natural numbers below 1024       
+ * main - Lists all the natural numbers below 1024 (excluded)      
  * Return: Always 0.
  */
 int main(void)
 {
-int i; 
+int i;
 int sum = 0;
 for (i = 0; i < 1024; i++)
 {
