@@ -16,7 +16,7 @@ break;
 if ((sum % 2) == 0)
 tot_sum += sum;
 fib1 = fib2;
-fib2 = fibsum;
+fib2 = sum;
 }
 printf("%.0f\n", tot_sum);
 return (0);
