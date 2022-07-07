@@ -5,14 +5,14 @@
  * @c: input character
  * Return: 1 if is an uppercase character ,else 0
  */
-int _isupper(int c)
+int _isupper(int z)
 {
-	if (c >= 65 && c <= 90)
+	if (z >= 65 && z <= 90)
 	{
 		return (1);
 	}
 	else
 	{
-		return (0);
+	return (0);
 	}
 }
