@@ -9,7 +9,7 @@ int main(void)
 long int n, prime;
 
 n = 612852475143;
-for (fp = 2; prime <= n; prime++)
+for (prime = 2; prime <= n; prime++)
 {
 if (n % prime == 0)
 {
