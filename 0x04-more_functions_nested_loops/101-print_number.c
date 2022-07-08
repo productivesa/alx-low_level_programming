@@ -6,7 +6,7 @@
  */
 void print_number(int n)
 {
-unsigned int m, d, count;
+unsigned int a, b, count;
 
 if (n < 0)
 {
@@ -27,8 +27,8 @@ b /= 10;
 c *= 10
 }
 
-for (; count >= 1; count /= 10)
+for (; c >= 1; c /= 10)
 {
-_putchar(((m / count) % 10) + 48);
+_putchar(((a / c) % 10) + 48);
 }
 }
