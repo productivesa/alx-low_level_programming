@@ -6,30 +6,22 @@
  */
 int _atoi(char *s)
 {
-	unsigned int i, x;
-	unsigned int len = 0;
-	unsigned int a = 0;
-	unsigned int b = 1;
-	unsigned int c = 1;
+	int count = 1;
+	unsigned int nb = 0;
+	char *temp = s;
 
-	while (*(s + x) != '\0')
+	while (*temp != '\0' && (*temp < '0' || *temp > '9'))
 	{
-		if (len > 0 && (*(s + x) < '0' || *(s + x) > '9'))
-			break;
-		if (*(s + x) == '-')
-			b *= -1;
-		if ((*(s + x) >= '0') && (*(s + x) <= '9'))
-		{
-			if (len > 0)
-				c *= 10;
-			len++;
-		}
-		x++;
+		if (*temp == '-')
+			count *= -1;
+		temp++;
 	}
-	for (i = x - len; i < x; i++)
+	if (*temp != '\0')
 	{
-		a = a + ((*(s + i) - 48) * c);
-		c /= 10;
+		do {
+			nb = nb * 10 + (*temp - '0');
+			temp++;
+		} while (*temp >= '0' && *temp <= '9');
 	}
-	return (a * b);
+	return (nb * count);
 }
