@@ -6,11 +6,11 @@
  */
 int _atoi(char *s)
 {
-	int i, x;
-	int len = 0;
-	int a = 0;
-	int b = 1;
-	int c = 1;
+	unsigned int i, x;
+	unsigned int len = 0;
+	unsigned int a = 0;
+	unsigned int b = 1;
+	unsigned int c = 1;
 
 	while (*(s + x) != '\0')
 	{
