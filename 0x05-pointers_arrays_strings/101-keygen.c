@@ -11,7 +11,7 @@ int main(void)
 	int password;
 	int sum;
 
-	srand(time(null));
+	srand(time(NULL));
 	sum = 0;
 	while (sum <= 2645)
 	{
