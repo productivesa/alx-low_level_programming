@@ -28,7 +28,7 @@ int _atoi(char *s)
 	}
 	for (i = x - len; i < x; i++)
 	{
-		a = a + ((*(s + i) - 48) * m);
+		a = a + ((*(s + i) - 48) * c);
 		c /= 10;
 	}
 	return (a * b);
