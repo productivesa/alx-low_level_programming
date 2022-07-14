@@ -6,21 +6,22 @@
  */
 char *rot13(char *z)
 {
-	int len = 0, i;
-	char alphab[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char rotrot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-
-	while (*(z + len) != '\0')
-	{
-		for (i = 0; i < 52; i++)
+	int i = 0, j;
+	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	
+		while (z[i] != '\0)'
 		{
-			if (*(z + len) == alphabe[i])
+			j = 0;
+			while (alpha[j] != '\0')
 			{
-				*(z + len) = rotrot[i];
-				break;
-			}
+				if (z[i] == alpha[j])
+				{
+					z[i] = rot[j]
+						break;
+				}
+				j++;
+			}i++;
 		}
-		len++;
-	}
-	return (z);
+		return (z);
 }
