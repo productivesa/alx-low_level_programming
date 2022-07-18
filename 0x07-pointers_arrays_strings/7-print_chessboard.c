@@ -4,7 +4,7 @@
  * @a: print character
  * Return: Always 0 to exit
  */
-void print_chesboard(char(*a)[8])
+void print_chessboard(char(*a)[8])
 {
 	int i = 0;
 	int j = 0;
