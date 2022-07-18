@@ -9,10 +9,13 @@ char *_strchr(char *s, char c)
 {
 	unsigned int x = 0;
 
-	for (; *(s + x) != '\0'; x++)
-		if (*(s + x) == c)
-			return (s + x);
-	if (*(s + x) == c)
-		return (s + x);
+	while (s[x] != '\0')
+	{
+		x++;
+		if (s[x] == c)
+		{
+			return (&s[x]);
+		}
+	}
 	return ('\0');
 }
