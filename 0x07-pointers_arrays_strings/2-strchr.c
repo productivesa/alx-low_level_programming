@@ -10,7 +10,7 @@ char *_memcpy(char *s, char c)
 	unsigned int x = 0;
 
 	for (; *(s + x) != '\0'; x++)
-		if (*(dest + x) == c)
+		if (*(s + x) == c)
 			return (s + x);
 	if (*(s + x) == c)
 		return (s + x);
