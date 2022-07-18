@@ -5,7 +5,7 @@
  * @src: character
  * Return: the pointer when the character is found
  */
-char *_memcpy(char *s, char c)
+char *_strchr(char *s, char c)
 {
 	unsigned int x = 0;
 
