@@ -15,7 +15,6 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (*(s + x) == *(accept + z))
 				return (s + x);
-		0
 		}
 	}
 	return ('\0');
