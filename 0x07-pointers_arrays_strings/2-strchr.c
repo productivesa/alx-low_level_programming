@@ -9,9 +9,9 @@ char *_memcpy(char *s, char c)
 {
 	unsigned int x = 0;
 
-	for (; *(s + i) != '\0'; x++)
+	for (; *(s + x) != '\0'; x++)
 		if (*(dest + x) == c)
-			return (s + i);
+			return (s + x);
 	if (*(s + x) == c)
 		return (s + x);
 	return ('\0');
