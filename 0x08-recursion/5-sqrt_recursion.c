@@ -1,5 +1,19 @@
 #include "main.h"
 /**
+ * sqrt - finds the srt natural number.
+ * @n: numbers to find the sauare
+ * @itr: iteartor
+ * Return: sqaure root if it is natural square root else -1
+ */
+int sqrt(int n, int itr)
+{
+	if ((itr * itr) == n)
+		return (itr);
+	if (itr == n / 2)
+		return (-1);
+	return (sqrt(n, itr + 1));
+}
+/**
  * _sqrt_recursion - returns square root of a number.
  * @n: input numbers.
  * Return: square root.
@@ -12,5 +26,5 @@ int _sqrt_recursion(int n)
 		return (0);
 	if (n == 1)
 		return (1);
-	return (power_operation(n, 2));
+	return (sqrt(n, 2));
 }
