@@ -20,7 +20,7 @@ int get_strln(char *s)
  */
 int get_palindrom(char *s, int leng, int i)
 {
-if (*(s[i] == s[leng / 2])
+if (s[i] == s[leng / 2])
 return (1);
 if (s[i] == s[leng - i - 1])
 return (get_palindrom(s, leng, i + 1));
