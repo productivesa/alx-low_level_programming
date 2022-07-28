@@ -1,10 +1,11 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _realloc - change size of copy content
+ * _realloc - change the size and copy the content
  * @ptr: malloc pointer
  * @old_size: old sizeof bytes
  * @new_size: new sizeof bytes
+ * Return: Always 0
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
