@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	char *opc = (char *) main;
-	int x, nbutes;
+	int x, nbytes;
 
 	if (argc != 2)
 	{
