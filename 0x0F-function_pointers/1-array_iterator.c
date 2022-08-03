@@ -1,4 +1,4 @@
-#include "function_ppointers.h"
+#include "function_pointers.h"
 /**
  * array_iterator - execute a function
  * @array: input
