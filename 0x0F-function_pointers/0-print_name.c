@@ -4,10 +4,10 @@
  * print_name - prints the name
  * @name: input name
  * @f: function pointer
- * Return: Always 0 .
+ * Return: Always 0
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (anme && f)
+	if (name != NULL && f != NULL)
 		f(name);
 }
