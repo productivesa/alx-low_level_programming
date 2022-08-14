@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 /**
  * alxfirst - functioon executed before main function
  * Return: no return
