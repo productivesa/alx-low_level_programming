@@ -6,8 +6,10 @@
  */
 int get_indianness(void)
 {
-	unsigned int i = 1;
-	char *c = (char *)&i;
+	unsigned int x = 1;
+	char *c;
+
+	c = (char *) &x;
 
 	return ((int)*c);
 }
