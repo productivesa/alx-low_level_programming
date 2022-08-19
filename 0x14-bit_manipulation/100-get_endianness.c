@@ -1,15 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * get_endianness - function checks endianness
- * Return: 1 if little  is endian , 0 if big indian
+ * get_endianness - Write a function that checks the endianness.
+ * Prototype: int get_endianness(void).
+ * Return: 1, if architecture is little endian, 0 in case of big endian.
  */
-int get_indianness(void)
+int get_endianness(void)
 {
 	unsigned int x = 1;
-	char *c;
-
-	c = (char *) &x;
+	char *c = (char *) &x;
 
 	return ((int)*c);
 }
