@@ -8,13 +8,13 @@
  * Return: 1 or 0 failed
  */
 int clear_bit(unsigned long int *n, unsigned int index)
+
 {
-	unsigned int sum;
+	int add;
 
 	if (index > 63)
 		return (-1);
-	sum = 1 << index;
-
-	*n = *n & (-sum);
+	add = 1 << index;
+	*n = *n & (~add);
 	return (1);
 }
