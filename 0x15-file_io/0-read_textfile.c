@@ -9,7 +9,7 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int numbertorea, numbertowrite, fd;
+	int ntoread, ntowrite, fd;
 	char *buff;
 
 	if (filename == NULL)
@@ -20,19 +20,19 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 	{
-		free(s);
+		free(buff);
 		return (0);
 	}
-	numbertoread = read(fd, buff, letters);
-	if (numbertoread == -1)
+	ntoread = read(fd, buff, letters);
+	if (ntoread == -1)
 	{
 		free(buff);
 		return (0);
 	}
-	numbertowrite = write(STDOUT_FILENO, buff, numbertoread);
+	ntowrite = write(STDOUT_FILENO, buff, ntoread);
 	close(fd);
 	free(buff);
-	if (numbertoread == numbertowrite)
-		return (numbertowrite);
+	if (ntoread == ntowrite)
+		return (ntowrite);
 	return (0);
 }
