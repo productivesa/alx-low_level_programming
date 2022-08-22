@@ -9,13 +9,13 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int ntoread, ntowrite, fd;
+	int fd, nread, nwrite;
 	char *buff;
 
 	if (filename == NULL)
 		return (0);
-	buff = malloc(letters * sizeof(char) + 1);
-	if (!buff)
+	s = malloc(letters * sizeof(char) + 1);
+	if (!buffer)
 		return (0);
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
@@ -23,16 +23,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buff);
 		return (0);
 	}
-	ntoread = read(fd, buff, letters);
-	if (ntoread == -1)
+	nread = read(fd, s, letters);
+	if (nread == -1)
 	{
-		free(buff);
+		free(s);
 		return (0);
 	}
-	ntowrite = write(STDOUT_FILENO, buff, ntoread);
+	nwrite = write(STDOUT_FILENO, s, nread);
 	close(fd);
-	free(buff);
-	if (ntoread == ntowrite)
-		return (ntowrite);
+	free(s);
+	if (nread == nwrite)
+		return (nwrite);
 	return (0);
 }
