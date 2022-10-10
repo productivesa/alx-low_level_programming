@@ -6,5 +6,5 @@
  */
 int main(void)
 {
-	printf("%d\n", _strlen("My Dyn Lib"));
+	printf("%p.\n",("My Dyn Lib"));
 }
