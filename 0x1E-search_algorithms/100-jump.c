@@ -2,7 +2,7 @@
 #include <math.h>
 
 /**
- * a function that searches for a value in a sorted array of
+ * jump_search - searches for a value in an array of
  * integers using the Jump search algorithm
  *
  * @array: input array
@@ -12,13 +12,13 @@
  */
 int jump_search(int *array, size_t size, int value)
 {
-	int index, i, j, prev;
+	int index, m, k, prev;
 
 	if (array == NULL || size == 0)
 		return (-1);
 
-	i = (int)sqrt((double)size);
-	j = 0;
+	m = (int)sqrt((double)size);
+	k = 0;
 	prev = index = 0;
 
 	do {
@@ -26,9 +26,9 @@ int jump_search(int *array, size_t size, int value)
 
 		if (array[index] == value)
 			return (index);
-		j++;
+		k++;
 		prev = index;
-		index = j * i;
+		index = k * m;
 	} while (index < (int)size && array[index] < value);
 
 	printf("Value found between indexes [%d] and [%d]\n", prev, index);
